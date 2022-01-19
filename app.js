@@ -76,8 +76,8 @@ document.addEventListener("keydown", (e) => {
             console.log("kick");
           } else {
             if (e.key === "k") {
-              playClHiHat();
-              console.log("closed high hat");
+              playOpHiHat();
+              console.log("open high hat");
             }
           }
         }
