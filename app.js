@@ -22,23 +22,69 @@ function playDrum(event) {
   }
 }
 
-// function playSnare() => {
-//   if( event.keyCode === 74) {
-//     let soundToPlay = event.target.dataset.sound;
-//     drums.play(soundToPlay);
-//   }
-// }
+function playSnare() {
+  let soundToPlay = "CYCdh_Kurz02-Snr02";
+  console.log(soundToPlay);
+  drums.play(soundToPlay);
+}
 
-// function handlePlaySnare("keydown", playSnare() => {
-// console.log('ensnared');
-// });
+function playCrash() {
+  let soundToPlay = "CYCdh_Crash-01";
+  console.log(soundToPlay);
+  drums.play(soundToPlay);
+}
+function playClap() {
+  let soundToPlay = "CYCdh_LudRimC-07";
+  console.log(soundToPlay);
+  drums.play(soundToPlay);
+}
+function playClHiHat() {
+  let soundToPlay = "CYCdh_Sab_ClHat-06";
+  console.log(soundToPlay);
+  drums.play(soundToPlay);
+}
+function playOpHiHat() {
+  let soundToPlay = "KHats Open-07";
+  console.log(soundToPlay);
+  drums.play(soundToPlay);
+}
+function playKick() {
+  let soundToPlay = "CYCdh_AcouKick-14";
+  console.log(soundToPlay);
+  drums.play(soundToPlay);
+}
 
-//const snare = document.querySelector(".snare");
-// const clHat = document.querySelector(".clHat");
-// const kick = document.querySelector(".kick");
-// const clap = document.querySelector(".clap");
-// const opHat = document.querySelector(".opHat");
-// const crash = document.querySelector(".crash");
+document.addEventListener("keydown", (e) => {
+  if (e.key === "l") {
+    playSnare();
+    console.log("snare");
+  } else {
+    if (e.key === "f") {
+      playCrash();
+      console.log("crash");
+    } else {
+      if (e.key === "s") {
+        playClap();
+        console.log("clap");
+      } else {
+        if (e.key === "d") {
+          playClHiHat();
+          console.log("closed high hat");
+        } else {
+          if (e.key === "j") {
+            playKick();
+            console.log("kick");
+          } else {
+            if (e.key === "k") {
+              playClHiHat();
+              console.log("closed high hat");
+            }
+          }
+        }
+      }
+    }
+  }
+});
 
 drumkit.addEventListener("click", () => {
   if (event.target.classList.contains("pad")) {

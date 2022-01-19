@@ -20,11 +20,12 @@ body {
   align-items: center;
   margin: 10px;
   flex: 1 0 calc(33.333% - 20px);
-  background: radial-gradient(#e18174, #d15746);
+  background: radial-gradient(#fa5f4a, #1a75e4);
   border-radius: 10px;
 }
 
 .pad img {
   width: 150px;
   pointer-events: none;
+  border-radius: 95%;
 }
