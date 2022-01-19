@@ -9,10 +9,10 @@
   </head>
   <body>
     <div class="drumkit">
-      <div class="pad clap"  data-sound="CYCdh_LudRimC-07">
+      <div class="pad clap" data-sound="CYCdh_LudRimC-07">
         <img src="./drumkit icons/clap.png" alt="clap" />
       </div>
-      <div class="pad clHat" data-sound="CYCdh_Sab_ClHat-06"">
+      <div class="pad clHat" data-sound="CYCdh_Sab_ClHat-06">
         <img src="./drumkit icons/closed high hat.png" alt="closed high hat" />
       </div>
       <div class="pad crash" data-sound="CYCdh_Crash-01">
@@ -24,14 +24,16 @@
       <div class="pad opHat" data-sound="KHats Open-07">
         <img src="./drumkit icons/open high hat.png" alt="open high hat" />
       </div>
-      <div class="pad snare" data-sound="CYCdh_Kurz02-Snr02">
+      <div
+        class="pad snare"
+        data-sound="CYCdh_Kurz02-Snr02"
+        onkeydown="handlePlaySnare()"
+      >
         <img src="./drumkit icons/snare.png" alt="clap" />
       </div>
     </div>
 
     <script src="howler.min.js"></script>
     <script src="app.js"></script>
-
-    
   </body>
 </html>
